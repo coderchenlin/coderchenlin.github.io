@@ -4,11 +4,24 @@
   
     
     <entry>
+      <title>pic</title>
+      <link href="/coderchenlin/coderchenlin.github.io.git/2022/11/13/pic/"/>
+      <url>/coderchenlin/coderchenlin.github.io.git/2022/11/13/pic/</url>
+      
+        <content type="html"><![CDATA[<h3 id="test"><a href="#test" class="headerlink" title="test"></a>test</h3><p><img src="/coderchenlin/coderchenlin.github.io.git/images/1.jpg"></p><p><img src="https://raw.githubusercontent.com/coderchenlin/Blog-img/main/1.jpg"></p><p><img src="/coderchenlin/coderchenlin.github.io.git/1.jpg"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/coderchenlin/coderchenlin.github.io.git/2022/11/13/picgo/"/>
       <url>/coderchenlin/coderchenlin.github.io.git/2022/11/13/picgo/</url>
       
-        <content type="html"><![CDATA[<p>title: picgo 使用</p><p>tags:</p><ul><li>工具</li></ul><p>Test</p><p><img src="https://raw.githubusercontent.com/coderchenlin/Blog-img/main/1.jpg" alt="收手吧"></p>]]></content>
+        <content type="html"><![CDATA[<p>title: picgo 使用</p><p>tags:</p><ul><li>工具</li></ul><p>Test</p><p><img src="/coderchenlin/coderchenlin.github.io.git/public/medias/me.jpg" alt="收手吧"></p>]]></content>
       
       
       
