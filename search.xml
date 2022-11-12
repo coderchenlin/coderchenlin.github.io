@@ -4,9 +4,22 @@
   
     
     <entry>
+      <title></title>
+      <link href="/coderchenlin/coderchenlin.github.io.git/2022/11/13/picgo/"/>
+      <url>/coderchenlin/coderchenlin.github.io.git/2022/11/13/picgo/</url>
+      
+        <content type="html"><![CDATA[<p>title: picgo 使用</p><p>tags:</p><ul><li>工具</li></ul><p>Test</p><p><img src="https://raw.githubusercontent.com/coderchenlin/Blog-img/main/1.jpg" alt="收手吧"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
-      <link href="/2022/11/12/hello-world/"/>
-      <url>/2022/11/12/hello-world/</url>
+      <link href="/coderchenlin/coderchenlin.github.io.git/2022/11/12/hello-world/"/>
+      <url>/coderchenlin/coderchenlin.github.io.git/2022/11/12/hello-world/</url>
       
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
@@ -18,8 +31,8 @@
     
     <entry>
       <title>Q&amp;A</title>
-      <link href="/2022/11/09/interview/"/>
-      <url>/2022/11/09/interview/</url>
+      <link href="/coderchenlin/coderchenlin.github.io.git/2022/11/09/interview/"/>
+      <url>/coderchenlin/coderchenlin.github.io.git/2022/11/09/interview/</url>
       
         <content type="html"><![CDATA[<h1 id="Interview-问题收集"><a href="#Interview-问题收集" class="headerlink" title="Interview 问题收集"></a>Interview 问题收集</h1><h6 id="memcopy-与-memmove谁更安全？"><a href="#memcopy-与-memmove谁更安全？" class="headerlink" title="memcopy 与 memmove谁更安全？"></a>memcopy 与 memmove谁更安全？</h6><p>memmove 更安全，memove 可以正确处理地址重叠的部分。</p><h6 id="const-与-define-在定义常量的区别？"><a href="#const-与-define-在定义常量的区别？" class="headerlink" title="const 与 define 在定义常量的区别？"></a>const 与 define 在定义常量的区别？</h6><p>const 申明的常量会进行类型检查，define只是替换，不做类型检查。</p><h6 id="static-关键字的作用？"><a href="#static-关键字的作用？" class="headerlink" title="static 关键字的作用？"></a>static 关键字的作用？</h6><p>static申明的类变量属于类，不属于某个对象，是所有类共享。</p><h6 id="Cache和主存内存一致性"><a href="#Cache和主存内存一致性" class="headerlink" title="Cache和主存内存一致性"></a>Cache和主存内存一致性</h6><ol><li>write-through 写操作是数据写入cache又写入内存。</li><li>write-back 写操作只是在数据被踢出cache时才写入内存。</li></ol><h6 id="指令调度的基本流程"><a href="#指令调度的基本流程" class="headerlink" title="指令调度的基本流程"></a>指令调度的基本流程</h6><ol><li>构建DAG图，对DAG图进行处理</li><li>初始化，包括调度策略，DAG图，调度器队列；</li><li>选取节点进行调度，pickNode方法在自定义调度策略中被重写，GenericScheduler::pickNode（）获取RegionPolicy中设置的次序&gt;进行遍历，pickNode方法返回一个SUnit（Scheduling unit），这是调度图中的一个节点表示，包含节点的一系列属性和状态，譬如isPending，isAvailable，isScheduled等用于记录节点状态的信息；调试时可以通过SUnit.getInstr()-&gt;dump()打印出节点中指令的信息。</li><li>scheduleMI，移动指令和更新寄存器压力信息</li><li>更新调度状态，将SU-&gt;isScheduled 设为 true。</li></ol><h6 id="std-cout-与-std-cerr-的区别"><a href="#std-cout-与-std-cerr-的区别" class="headerlink" title="std::cout 与 std::cerr 的区别?"></a>std::cout 与 std::cerr 的区别?</h6><p>​std::cerr不需要被发送缓冲区，可以直接显示输出，std::cout 为了减少刷屏的次数，设置了缓冲区，这样在遇到std::endl 或者”\n”&gt;时会调用os.flush把缓冲区内容输出到显示器上进行显示。</p>]]></content>
       
