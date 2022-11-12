@@ -1,9 +1,9 @@
 echo "Start"
 git add .
 git commit -m backup
-git checkout br-back
+git checkout br-back1
 git cherry-pick master
-git push origin br-back
+git push origin br-back1
 git checkout master
 hexo g
 hexo d
