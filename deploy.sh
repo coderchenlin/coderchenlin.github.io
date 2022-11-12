@@ -1,7 +1,7 @@
 echo "Start"
 git add .
 git commit -m backup
-git push -f
+git push 
 hexo g
 hexo d
 echo "Finish"
