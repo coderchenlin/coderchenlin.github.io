@@ -7,8 +7,6 @@ itags:
 
 ### test
 
+
 ![](/images/1.jpg)
 
-![](https://raw.githubusercontent.com/coderchenlin/Blog-img/main/1.jpg)
-
-![](1.jpg)
