@@ -4,6 +4,40 @@
   
     
     <entry>
+      <title>C++关键字总结</title>
+      <link href="/2022/11/15/Cplusplus%E5%85%B3%E9%94%AE%E5%AD%97/"/>
+      <url>/2022/11/15/Cplusplus%E5%85%B3%E9%94%AE%E5%AD%97/</url>
+      
+        <content type="html"><![CDATA[<h3 id="mutable-与-const"><a href="#mutable-与-const" class="headerlink" title="mutable 与 const"></a>mutable 与 const</h3><p>mutable的中文意思是“可变的，易变的”，跟constant（既C++中的const）是反义词。</p><p>1、const所修饰的函数中，要有编译器负责保护类中的成员函数不被修改；而相对地，mutable则是用来修饰类的成员变量的，让该变量在const修饰的常成员函数中可以被修改</p><p>2、const修饰的函数只能是类的成员函数(保护this指针不被恶意修改)；mutable修饰的变量只能是类的成员变量。</p><p>3、在C++中，mutable也是为了突破const的限制而设置的。被mutable修饰的变量，将永远处于可变的状态，即使在一个const修饰的常成员函数中。</p><h3 id="private"><a href="#private" class="headerlink" title="private"></a>private</h3><p> private可以保护不被类的成员不被外界调用，析构函数通常情况是public的，这样外部调用的时候可以用于<br> 释放内存，如果一个析构函数被private修饰，那么会出现编译报错，因为编译器不能调用被private保护的析构函数。  </p><h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>[1] <a href="https://blog.csdn.net/weixin_42067873/article/details/96107750">https://blog.csdn.net/weixin_42067873/article/details/96107750</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> interview </tag>
+            
+            <tag> c/c++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2022/11/15/Linux%E6%96%87%E6%9C%AC%E6%93%8D%E4%BD%9C/"/>
+      <url>/2022/11/15/Linux%E6%96%87%E6%9C%AC%E6%93%8D%E4%BD%9C/</url>
+      
+        <content type="html"><![CDATA[<ol><li><p>把src.txt 的文本追加到dst.txt 后面</p><figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat src.txt &gt;&gt; dst.txt</span><br></pre></td></tr></tbody></table></figure></li><li><p>linux 单线程所能支持的最大文件处理数量</p><figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /proc/sys/fs/file-max</span><br></pre></td></tr></tbody></table></figure><p>设置:例如设置成8192</p><figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo 8192 &gt; /proc/sys/fs/file-max</span><br></pre></td></tr></tbody></table></figure></li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/2022/11/13/picgo/"/>
       <url>/2022/11/13/picgo/</url>
