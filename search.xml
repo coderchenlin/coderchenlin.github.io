@@ -26,8 +26,8 @@
     
     <entry>
       <title></title>
-      <link href="/2022/11/15/Linux%20%E6%96%87%E6%9C%AC%E6%93%8D%E4%BD%9C/"/>
-      <url>/2022/11/15/Linux%20%E6%96%87%E6%9C%AC%E6%93%8D%E4%BD%9C/</url>
+      <link href="/2022/11/15/Linux%E6%96%87%E6%9C%AC%E6%93%8D%E4%BD%9C/"/>
+      <url>/2022/11/15/Linux%E6%96%87%E6%9C%AC%E6%93%8D%E4%BD%9C/</url>
       
         <content type="html"><![CDATA[<ol><li><p>把src.txt 的文本追加到dst.txt 后面</p><figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat src.txt &gt;&gt; dst.txt</span><br></pre></td></tr></tbody></table></figure></li><li><p>linux 单线程所能支持的最大文件处理数量</p><figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /proc/sys/fs/file-max</span><br></pre></td></tr></tbody></table></figure><p>设置:例如设置成8192</p><figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo 8192 &gt; /proc/sys/fs/file-max</span><br></pre></td></tr></tbody></table></figure></li></ol>]]></content>
       
