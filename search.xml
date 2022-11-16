@@ -23,19 +23,6 @@
     
     
     <entry>
-      <title></title>
-      <link href="/2022/11/15/picgo/"/>
-      <url>/2022/11/15/picgo/</url>
-      
-        <content type="html"><![CDATA[<p>title: picgo 使用</p><p>tags:</p><ul><li>工具</li></ul><p>Test</p><p><img src="https://cdn.jsdelivr.net/gh/coderchenlin/coderchenlin.github.io@1.0/source/images/1.jpg" alt="收手吧"><br><img src="https://cdn.jsdelivr.net/gh/coderchenlin/coderchenlin.github.io@1.0/source/images/2022_11_13.jpg" alt="收手吧"><br><img src="/images/1.jpg" alt="收手吧"></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hello World</title>
       <link href="/2022/11/15/hello-world/"/>
       <url>/2022/11/15/hello-world/</url>
@@ -64,19 +51,6 @@
             <tag> c/c++ </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>pic</title>
-      <link href="/2022/11/13/pic/"/>
-      <url>/2022/11/13/pic/</url>
-      
-        <content type="html"><![CDATA[<h3 id="test"><a href="#test" class="headerlink" title="test"></a>test</h3><p><img src="/images/1.jpg"></p>]]></content>
-      
-      
       
     </entry>
     
