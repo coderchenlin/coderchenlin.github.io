@@ -1,3 +1,10 @@
+---
+date: 2022-11-16 22:09:50  
+title: linux文本操作 
+tags:
+- shell
+---
+
 1. 把src.txt 的文本追加到dst.txt 后面
 
    ```shell
