@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>github: 问题收集</title>
+      <link href="/2023/06/04/github-%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/"/>
+      <url>/2023/06/04/github-%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/</url>
+      
+        <content type="html"><![CDATA[<ol><li>Recv failure: Connection reset by peer<br>Firstly try this. <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></tbody></table></figure></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Neovim: 安装与配置</title>
       <link href="/2023/06/04/Neovim-%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
       <url>/2023/06/04/Neovim-%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
