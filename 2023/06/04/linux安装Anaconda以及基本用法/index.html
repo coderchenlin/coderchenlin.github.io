@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>linux安装Anaconda以及基本用法 | Lin&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="要在Linux上安装Anaconda，您可以按照以下步骤进行操作：  下载Anaconda：首先，访问Anaconda官方网站（https:&#x2F;&#x2F;www.anaconda.com&#x2F;products&#x2F;individual）并下载适用于Linux的Anaconda安装包。请选择适合您系统的版本（如Python 3.7或Python 3.8）。  打开终端：打开终端应用程序，您可以在系统菜单中找到它。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux安装Anaconda以及基本用法">
+<meta property="og:url" content="https://coderchenlin.github.io/2023/06/04/linux%E5%AE%89%E8%A3%85Anaconda%E4%BB%A5%E5%8F%8A%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/index.html">
+<meta property="og:site_name" content="Lin&#39;s Blog">
+<meta property="og:description" content="要在Linux上安装Anaconda，您可以按照以下步骤进行操作：  下载Anaconda：首先，访问Anaconda官方网站（https:&#x2F;&#x2F;www.anaconda.com&#x2F;products&#x2F;individual）并下载适用于Linux的Anaconda安装包。请选择适合您系统的版本（如Python 3.7或Python 3.8）。  打开终端：打开终端应用程序，您可以在系统菜单中找到它。">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-06-04T13:50:31.000Z">
+<meta property="article:modified_time" content="2023-06-04T13:54:05.033Z">
+<meta property="article:author" content="Lin Chen">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="Anaconda">
+<meta property="article:tag" content="python">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Lin's Blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Lin&#39;s Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://coderchenlin.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-linux安装Anaconda以及基本用法" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/06/04/linux%E5%AE%89%E8%A3%85Anaconda%E4%BB%A5%E5%8F%8A%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" class="article-date">
+  <time class="dt-published" datetime="2023-06-04T13:50:31.000Z" itemprop="datePublished">2023-06-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      linux安装Anaconda以及基本用法
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>要在Linux上安装Anaconda，您可以按照以下步骤进行操作：</p>
+<ol>
+<li><p>下载Anaconda：首先，访问Anaconda官方网站（<a target="_blank" rel="noopener" href="https://www.anaconda.com/products/individual%EF%BC%89%E5%B9%B6%E4%B8%8B%E8%BD%BD%E9%80%82%E7%94%A8%E4%BA%8ELinux%E7%9A%84Anaconda%E5%AE%89%E8%A3%85%E5%8C%85%E3%80%82%E8%AF%B7%E9%80%89%E6%8B%A9%E9%80%82%E5%90%88%E6%82%A8%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%89%88%E6%9C%AC%EF%BC%88%E5%A6%82Python">https://www.anaconda.com/products/individual）并下载适用于Linux的Anaconda安装包。请选择适合您系统的版本（如Python</a> 3.7或Python 3.8）。</p>
+</li>
+<li><p>打开终端：打开终端应用程序，您可以在系统菜单中找到它。</p>
+</li>
+<li><p>切换到下载目录：使用<code>cd</code>命令切换到您下载Anaconda安装包的目录。例如，如果安装包在主目录的”Downloads”文件夹中，可以运行以下命令：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ~/Downloads</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>运行安装脚本：在终端中运行以下命令来执行安装脚本（请根据您下载的文件名进行替换）：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash Anaconda3-&lt;版本号&gt;-Linux-x86_64.sh</span><br></pre></td></tr></tbody></table></figure>
+
+<p>注意：请确保将<code>&lt;版本号&gt;</code>替换为您下载的Anaconda版本的实际版本号。</p>
+</li>
+<li><p>阅读并接受许可协议：在安装过程中，您将被要求阅读并接受许可协议。请按照屏幕上的指示进行操作。</p>
+</li>
+<li><p>选择安装位置：接下来，您将被要求选择Anaconda的安装位置。默认情况下，它会安装在您的主目录下，但您可以选择其他位置。按照屏幕上的指示进行操作。</p>
+</li>
+<li><p>初始化Anaconda：安装完成后，您将被提示是否要初始化Anaconda。选择”yes”以使Anaconda生效并将其添加到您的Shell配置文件（例如，<code>.bashrc</code>）。这样，您就可以在终端中使用Anaconda了。</p>
+</li>
+<li><p>重新加载Shell配置文件：在完成初始化后，重新加载Shell配置文件，以便立即生效。您可以运行以下命令之一：</p>
+<ul>
+<li><p>如果您使用的是bash Shell：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.bashrc</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>如果您使用的是zsh Shell：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.zshrc</span><br></pre></td></tr></tbody></table></figure></li>
+</ul>
+</li>
+</ol>
+<p>至此，Anaconda已成功安装在您的Linux系统上。您可以在终端中运行<code>conda</code>命令来管理和使用Anaconda环境、安装包等。</p>
+<p>Anaconda是一个功能强大的Python发行版，它提供了许多有用的命令和工具来管理Python环境和安装包。下面是一些常用的Anaconda命令以及一些有用的包管理命令：</p>
+<ol>
+<li><p>创建和管理环境：</p>
+<ul>
+<li>创建新环境：<code>conda create --name myenv</code>（”myenv”是环境名称，可以替换为您自己的名称）</li>
+<li>激活环境：<code>conda activate myenv</code></li>
+<li>停用环境：<code>conda deactivate</code></li>
+<li>删除环境：<code>conda remove --name myenv --all</code></li>
+</ul>
+</li>
+<li><p>管理包：</p>
+<ul>
+<li>安装包：<code>conda install packageName</code>（”packageName”是要安装的包名称）</li>
+<li>升级包：<code>conda update packageName</code>（更新指定的包到最新版本）</li>
+<li>移除包：<code>conda remove packageName</code>（卸载指定的包）</li>
+<li>搜索包：<code>conda search packageName</code>（搜索可用的包）</li>
+</ul>
+</li>
+<li><p>管理环境：</p>
+<ul>
+<li>导出环境：<code>conda env export &gt; environment.yml</code>（将当前环境的配置导出到YAML文件）</li>
+<li>创建环境：<code>conda env create -f environment.yml</code>（使用YAML文件创建环境）</li>
+<li>复制环境：<code>conda create --name myclone --clone myenv</code>（从一个环境克隆另一个环境）</li>
+</ul>
+</li>
+<li><p>其他常用命令：</p>
+<ul>
+<li>查看已安装的环境：<code>conda info --envs</code></li>
+<li>查看已安装的包：<code>conda list</code></li>
+<li>查看可用的包更新：<code>conda update --all</code></li>
+<li>查看conda版本：<code>conda --version</code></li>
+</ul>
+</li>
+</ol>
+<p>在安装Anaconda后，您可以使用上述命令来管理环境、安装、更新和删除包，以及导入和导出环境配置。此外，您还可以使用<code>pip</code>命令来安装Python包，它也是Anaconda中的一部分。</p>
+<p>对于常用的安装包，可以根据您的需求和项目来决定。以下是一些常用的Anaconda包的示例：</p>
+<ul>
+<li>NumPy：用于进行数值计算和科学计算的基础包。</li>
+<li>Pandas：提供了数据分析和数据处理的功能，适用于处理结构化数据。</li>
+<li>Matplotlib：用于绘制图形和数据可视化的库。</li>
+<li>Scikit-learn：提供了各种机器学习算法和工具，适用于数据挖掘和机器学习任务。</li>
+<li>TensorFlow：用于构建和训练深度学习模型的开源库。</li>
+<li>PyTorch：另一个流行的用于深度学习的开源库。</li>
+<li>Jupyter Notebook：用于创建交互式的数据分析和可视化文档的工具。</li>
+<li>Django：用于构建Web应用程序的高级Python框架。</li>
+</ul>
+<p>这只是一小部分常用的包示例，Anaconda提供了</p>
+<p>大量的包供您选择和安装，可以根据您的具体需求来安装适合的包。</p>
+<p>在Linux中，可以使用Anaconda中的conda来管理Python环境和包，而不必直接使用pip。但是，如果您希望在Anaconda环境中使用pip，可以按照以下步骤进行操作：</p>
+<ol>
+<li><p>激活Anaconda环境：在终端中运行以下命令来激活您的Anaconda环境（假设您的环境名称为”myenv”）：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda activate myenv</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>安装pip：在激活的Anaconda环境中，使用conda命令安装pip。运行以下命令：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install pip</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>使用pip：一旦安装了pip，您可以使用pip命令来安装、升级和删除Python包，就像在普通的Python环境中一样。例如：</p>
+<ul>
+<li>安装包：<code>pip install packageName</code></li>
+<li>升级包：<code>pip install --upgrade packageName</code></li>
+<li>删除包：<code>pip uninstall packageName</code></li>
+</ul>
+</li>
+</ol>
+<p>请注意，当您在Anaconda环境中使用pip时，安装的包将被放置在Anaconda环境的目录中，并与conda安装的包相互独立。这样可以避免与conda包管理系统的冲突。</p>
+<p>建议在Anaconda环境中优先使用conda来管理包，因为conda能够更好地处理依赖关系和环境兼容性。只有当您在Anaconda中找不到所需的包时，才建议使用pip进行安装。</p>
+<p>记得在完成操作后，您可以使用<code>conda deactivate</code>命令来停用Anaconda环境，或者关闭终端窗口来自动停用环境。</p>
+<p> — writed by chatgpt</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://coderchenlin.github.io/2023/06/04/linux%E5%AE%89%E8%A3%85Anaconda%E4%BB%A5%E5%8F%8A%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" data-id="clihhi37e00001xeh4kkz8chr" data-title="linux安装Anaconda以及基本用法" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Anaconda/" rel="tag">Anaconda</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2023/06/04/github-%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">github: 问题收集</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Anaconda/" rel="tag">Anaconda</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LLVM/" rel="tag">LLVM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Neovim/" rel="tag">Neovim</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/c-c/" rel="tag">c&#x2F;c++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/" rel="tag">github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/interview/" rel="tag">interview</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shell/" rel="tag">shell</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Anaconda/" style="font-size: 10px;">Anaconda</a> <a href="/tags/LLVM/" style="font-size: 10px;">LLVM</a> <a href="/tags/Neovim/" style="font-size: 10px;">Neovim</a> <a href="/tags/c-c/" style="font-size: 20px;">c/c++</a> <a href="/tags/git/" style="font-size: 20px;">git</a> <a href="/tags/github/" style="font-size: 20px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/interview/" style="font-size: 20px;">interview</a> <a href="/tags/linux/" style="font-size: 20px;">linux</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/shell/" style="font-size: 10px;">shell</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/05/">May 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/06/04/linux%E5%AE%89%E8%A3%85Anaconda%E4%BB%A5%E5%8F%8A%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/">linux安装Anaconda以及基本用法</a>
+          </li>
+        
+          <li>
+            <a href="/2023/06/04/github-%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/">github: 问题收集</a>
+          </li>
+        
+          <li>
+            <a href="/2023/06/04/Neovim-%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/">Neovim: 安装与配置</a>
+          </li>
+        
+          <li>
+            <a href="/2023/06/04/github-workflow/">github: workflow</a>
+          </li>
+        
+          <li>
+            <a href="/2023/06/04/git-pre-commit/">git pre-commit</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 Lin Chen<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
