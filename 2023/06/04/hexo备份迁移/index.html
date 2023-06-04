@@ -4,20 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>C++关键字总结 | Lin&#39;s Blog</title>
+  <title>hexo备份迁移 | Lin&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="mutable 与 constmutable的中文意思是“可变的，易变的”，跟constant（既C++中的const）是反义词。 1、const所修饰的函数中，要有编译器负责保护类中的成员函数不被修改；而相对地，mutable则是用来修饰类的成员变量的，让该变量在const修饰的常成员函数中可以被修改 2、const修饰的函数只能是类的成员函数(保护this指针不被恶意修改)；mutable修饰">
+  <meta name="description" content="hexo 部署到github 之后，如何进行进行迁移备份？ 1. 备份分支备份文件的分支和部署的分支要分开，比如这里我选择main 分支作为备份文件的分支，选择master作为部署分支。 12 ✗ echo &#96;git branch&#96;* main master  2. 新机器拉取拉取分支 新的机器首先配置hexo 所需环境，安装必须的 nodejs、npm、hexo，建议直接下载node的二进制压缩">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C++关键字总结">
-<meta property="og:url" content="https://coderchenlin.github.io/2022/11/15/Cplusplus%E5%85%B3%E9%94%AE%E5%AD%97/index.html">
+<meta property="og:title" content="hexo备份迁移">
+<meta property="og:url" content="https://coderchenlin.github.io/2023/06/04/hexo%E5%A4%87%E4%BB%BD%E8%BF%81%E7%A7%BB/index.html">
 <meta property="og:site_name" content="Lin&#39;s Blog">
-<meta property="og:description" content="mutable 与 constmutable的中文意思是“可变的，易变的”，跟constant（既C++中的const）是反义词。 1、const所修饰的函数中，要有编译器负责保护类中的成员函数不被修改；而相对地，mutable则是用来修饰类的成员变量的，让该变量在const修饰的常成员函数中可以被修改 2、const修饰的函数只能是类的成员函数(保护this指针不被恶意修改)；mutable修饰">
+<meta property="og:description" content="hexo 部署到github 之后，如何进行进行迁移备份？ 1. 备份分支备份文件的分支和部署的分支要分开，比如这里我选择main 分支作为备份文件的分支，选择master作为部署分支。 12 ✗ echo &#96;git branch&#96;* main master  2. 新机器拉取拉取分支 新的机器首先配置hexo 所需环境，安装必须的 nodejs、npm、hexo，建议直接下载node的二进制压缩">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-11-15T15:09:50.000Z">
-<meta property="article:modified_time" content="2022-11-15T14:48:56.000Z">
+<meta property="article:published_time" content="2023-06-04T09:00:29.000Z">
+<meta property="article:modified_time" content="2023-06-04T09:02:05.334Z">
 <meta property="article:author" content="Lin Chen">
-<meta property="article:tag" content="interview">
-<meta property="article:tag" content="c&#x2F;c++">
+<meta property="article:tag" content="linux, hexo, github">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Lin's Blog" type="application/atom+xml">
@@ -77,10 +76,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-Cplusplus关键字" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-hexo备份迁移" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2022/11/15/Cplusplus%E5%85%B3%E9%94%AE%E5%AD%97/" class="article-date">
-  <time class="dt-published" datetime="2022-11-15T15:09:50.000Z" itemprop="datePublished">2022-11-15</time>
+    <a href="/2023/06/04/hexo%E5%A4%87%E4%BB%BD%E8%BF%81%E7%A7%BB/" class="article-date">
+  <time class="dt-published" datetime="2023-06-04T09:00:29.000Z" itemprop="datePublished">2023-06-04</time>
 </a>
     
   </div>
@@ -91,7 +90,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      C++关键字总结
+      hexo备份迁移
     </h1>
   
 
@@ -99,21 +98,35 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h3 id="mutable-与-const"><a href="#mutable-与-const" class="headerlink" title="mutable 与 const"></a>mutable 与 const</h3><p>mutable的中文意思是“可变的，易变的”，跟constant（既C++中的const）是反义词。</p>
-<p>1、const所修饰的函数中，要有编译器负责保护类中的成员函数不被修改；而相对地，mutable则是用来修饰类的成员变量的，让该变量在const修饰的常成员函数中可以被修改</p>
-<p>2、const修饰的函数只能是类的成员函数(保护this指针不被恶意修改)；mutable修饰的变量只能是类的成员变量。</p>
-<p>3、在C++中，mutable也是为了突破const的限制而设置的。被mutable修饰的变量，将永远处于可变的状态，即使在一个const修饰的常成员函数中。</p>
-<h3 id="private"><a href="#private" class="headerlink" title="private"></a>private</h3><p> private可以保护不被类的成员不被外界调用，析构函数通常情况是public的，这样外部调用的时候可以用于<br> 释放内存，如果一个析构函数被private修饰，那么会出现编译报错，因为编译器不能调用被private保护的析构函数。  </p>
-<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>[1] <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42067873/article/details/96107750">https://blog.csdn.net/weixin_42067873/article/details/96107750</a></p>
+        <p>hexo 部署到github 之后，如何进行进行迁移备份？</p>
+<h3 id="1-备份分支"><a href="#1-备份分支" class="headerlink" title="1. 备份分支"></a>1. 备份分支</h3><p>备份文件的分支和部署的分支要分开，比如这里我选择main 分支作为备份文件的分支，选择master作为部署分支。</p>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> ✗ echo `git branch`</span><br><span class="line">* main master</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="2-新机器拉取拉取分支"><a href="#2-新机器拉取拉取分支" class="headerlink" title="2. 新机器拉取拉取分支"></a>2. 新机器拉取拉取分支</h3><ol>
+<li>新的机器首先配置hexo 所需环境，安装必须的 nodejs、npm、hexo，建议直接下载node的二进制压缩包，然后直接解压，设置软连接。</li>
+</ol>
+ <figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 1.下载地址</span></span><br><span class="line">https://nodejs.org/en/download/releases</span><br><span class="line"></span><br><span class="line"><span class="comment">## 2. 设置软连接</span></span><br><span class="line"><span class="built_in">ln</span> -s &lt;解压文件&gt;/some path/node /usr/local/bin/node</span><br><span class="line"><span class="built_in">ln</span> -s &lt;解压文件&gt;/some path/npm /usr/local/bin/npm</span><br><span class="line"><span class="built_in">ln</span> -s &lt;解压文件&gt;/some path/hexo /usr/local/bin/hexo</span><br></pre></td></tr></tbody></table></figure>
+
+<ol start="2">
+<li>拉取分支</li>
+</ol>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone htpps://.....git  &lt;somepath&gt;</span><br><span class="line">cd &lt;somepath&gt;</span><br><span class="line">npm install</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="3-Other"><a href="#3-Other" class="headerlink" title="3.  Other"></a>3.  Other</h3><ol>
+<li><p>hexo主题不匹配导致无法生成静态文件 *.html，此时可以将主题设置成默认的landscape，查看是否是主题问题。</p>
+</li>
+<li><p>github权限问题，除了配置ssh 密钥外，还要设置token。</p>
+</li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://coderchenlin.github.io/2022/11/15/Cplusplus%E5%85%B3%E9%94%AE%E5%AD%97/" data-id="clajr99640000ndfff3xiduos" data-title="C++关键字总结" class="article-share-link">Share</a>
+      <a data-url="https://coderchenlin.github.io/2023/06/04/hexo%E5%A4%87%E4%BB%BD%E8%BF%81%E7%A7%BB/" data-id="clih72lef0000i5eh2escaopt" data-title="hexo备份迁移" class="article-share-link">Share</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/c-c/" rel="tag">c&#x2F;c++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/interview/" rel="tag">interview</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux-hexo-github/" rel="tag">linux, hexo, github</a></li></ul>
 
     </footer>
   </div>
@@ -121,19 +134,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2022/11/15/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Hello World
-        
-      </div>
-    </a>
   
-  
-    <a href="/2022/11/09/interview/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2023/06/04/zsh/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Q&amp;A</div>
+      <div class="article-nav-title">ubuntu安装zsh</div>
     </a>
   
 </nav>
