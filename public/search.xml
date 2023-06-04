@@ -4,6 +4,48 @@
   
     
     <entry>
+      <title>linux安装Anaconda以及基本用法</title>
+      <link href="/2023/06/04/linux%E5%AE%89%E8%A3%85Anaconda%E4%BB%A5%E5%8F%8A%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/"/>
+      <url>/2023/06/04/linux%E5%AE%89%E8%A3%85Anaconda%E4%BB%A5%E5%8F%8A%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<p>要在Linux上安装Anaconda，您可以按照以下步骤进行操作：</p><ol><li><p>下载Anaconda：首先，访问Anaconda官方网站（<a href="https://www.anaconda.com/products/individual%EF%BC%89%E5%B9%B6%E4%B8%8B%E8%BD%BD%E9%80%82%E7%94%A8%E4%BA%8ELinux%E7%9A%84Anaconda%E5%AE%89%E8%A3%85%E5%8C%85%E3%80%82%E8%AF%B7%E9%80%89%E6%8B%A9%E9%80%82%E5%90%88%E6%82%A8%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%89%88%E6%9C%AC%EF%BC%88%E5%A6%82Python">https://www.anaconda.com/products/individual）并下载适用于Linux的Anaconda安装包。请选择适合您系统的版本（如Python</a> 3.7或Python 3.8）。</p></li><li><p>打开终端：打开终端应用程序，您可以在系统菜单中找到它。</p></li><li><p>切换到下载目录：使用<code>cd</code>命令切换到您下载Anaconda安装包的目录。例如，如果安装包在主目录的”Downloads”文件夹中，可以运行以下命令：</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ~/Downloads</span><br></pre></td></tr></tbody></table></figure></li><li><p>运行安装脚本：在终端中运行以下命令来执行安装脚本（请根据您下载的文件名进行替换）：</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash Anaconda3-&lt;版本号&gt;-Linux-x86_64.sh</span><br></pre></td></tr></tbody></table></figure><p>注意：请确保将<code>&lt;版本号&gt;</code>替换为您下载的Anaconda版本的实际版本号。</p></li><li><p>阅读并接受许可协议：在安装过程中，您将被要求阅读并接受许可协议。请按照屏幕上的指示进行操作。</p></li><li><p>选择安装位置：接下来，您将被要求选择Anaconda的安装位置。默认情况下，它会安装在您的主目录下，但您可以选择其他位置。按照屏幕上的指示进行操作。</p></li><li><p>初始化Anaconda：安装完成后，您将被提示是否要初始化Anaconda。选择”yes”以使Anaconda生效并将其添加到您的Shell配置文件（例如，<code>.bashrc</code>）。这样，您就可以在终端中使用Anaconda了。</p></li><li><p>重新加载Shell配置文件：在完成初始化后，重新加载Shell配置文件，以便立即生效。您可以运行以下命令之一：</p><ul><li><p>如果您使用的是bash Shell：</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.bashrc</span><br></pre></td></tr></tbody></table></figure></li><li><p>如果您使用的是zsh Shell：</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.zshrc</span><br></pre></td></tr></tbody></table></figure></li></ul></li></ol><p>至此，Anaconda已成功安装在您的Linux系统上。您可以在终端中运行<code>conda</code>命令来管理和使用Anaconda环境、安装包等。</p><p>Anaconda是一个功能强大的Python发行版，它提供了许多有用的命令和工具来管理Python环境和安装包。下面是一些常用的Anaconda命令以及一些有用的包管理命令：</p><ol><li><p>创建和管理环境：</p><ul><li>创建新环境：<code>conda create --name myenv</code>（”myenv”是环境名称，可以替换为您自己的名称）</li><li>激活环境：<code>conda activate myenv</code></li><li>停用环境：<code>conda deactivate</code></li><li>删除环境：<code>conda remove --name myenv --all</code></li></ul></li><li><p>管理包：</p><ul><li>安装包：<code>conda install packageName</code>（”packageName”是要安装的包名称）</li><li>升级包：<code>conda update packageName</code>（更新指定的包到最新版本）</li><li>移除包：<code>conda remove packageName</code>（卸载指定的包）</li><li>搜索包：<code>conda search packageName</code>（搜索可用的包）</li></ul></li><li><p>管理环境：</p><ul><li>导出环境：<code>conda env export &gt; environment.yml</code>（将当前环境的配置导出到YAML文件）</li><li>创建环境：<code>conda env create -f environment.yml</code>（使用YAML文件创建环境）</li><li>复制环境：<code>conda create --name myclone --clone myenv</code>（从一个环境克隆另一个环境）</li></ul></li><li><p>其他常用命令：</p><ul><li>查看已安装的环境：<code>conda info --envs</code></li><li>查看已安装的包：<code>conda list</code></li><li>查看可用的包更新：<code>conda update --all</code></li><li>查看conda版本：<code>conda --version</code></li></ul></li></ol><p>在安装Anaconda后，您可以使用上述命令来管理环境、安装、更新和删除包，以及导入和导出环境配置。此外，您还可以使用<code>pip</code>命令来安装Python包，它也是Anaconda中的一部分。</p><p>对于常用的安装包，可以根据您的需求和项目来决定。以下是一些常用的Anaconda包的示例：</p><ul><li>NumPy：用于进行数值计算和科学计算的基础包。</li><li>Pandas：提供了数据分析和数据处理的功能，适用于处理结构化数据。</li><li>Matplotlib：用于绘制图形和数据可视化的库。</li><li>Scikit-learn：提供了各种机器学习算法和工具，适用于数据挖掘和机器学习任务。</li><li>TensorFlow：用于构建和训练深度学习模型的开源库。</li><li>PyTorch：另一个流行的用于深度学习的开源库。</li><li>Jupyter Notebook：用于创建交互式的数据分析和可视化文档的工具。</li><li>Django：用于构建Web应用程序的高级Python框架。</li></ul><p>这只是一小部分常用的包示例，Anaconda提供了</p><p>大量的包供您选择和安装，可以根据您的具体需求来安装适合的包。</p><p>在Linux中，可以使用Anaconda中的conda来管理Python环境和包，而不必直接使用pip。但是，如果您希望在Anaconda环境中使用pip，可以按照以下步骤进行操作：</p><ol><li><p>激活Anaconda环境：在终端中运行以下命令来激活您的Anaconda环境（假设您的环境名称为”myenv”）：</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda activate myenv</span><br></pre></td></tr></tbody></table></figure></li><li><p>安装pip：在激活的Anaconda环境中，使用conda命令安装pip。运行以下命令：</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install pip</span><br></pre></td></tr></tbody></table></figure></li><li><p>使用pip：一旦安装了pip，您可以使用pip命令来安装、升级和删除Python包，就像在普通的Python环境中一样。例如：</p><ul><li>安装包：<code>pip install packageName</code></li><li>升级包：<code>pip install --upgrade packageName</code></li><li>删除包：<code>pip uninstall packageName</code></li></ul></li></ol><p>请注意，当您在Anaconda环境中使用pip时，安装的包将被放置在Anaconda环境的目录中，并与conda安装的包相互独立。这样可以避免与conda包管理系统的冲突。</p><p>建议在Anaconda环境中优先使用conda来管理包，因为conda能够更好地处理依赖关系和环境兼容性。只有当您在Anaconda中找不到所需的包时，才建议使用pip进行安装。</p><p>记得在完成操作后，您可以使用<code>conda deactivate</code>命令来停用Anaconda环境，或者关闭终端窗口来自动停用环境。</p><p> — writed by chatgpt</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> Anaconda </tag>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>github: 问题收集</title>
+      <link href="/2023/06/04/github-%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/"/>
+      <url>/2023/06/04/github-%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/</url>
+      
+        <content type="html"><![CDATA[<ol><li><p>Recv failure: Connection reset by peer<br>Firstly try this. </p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></tbody></table></figure></li><li><p>remote: Support for password authentication was removed on Augus</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote set-url origin https://&lt;new token&gt;@github.com/&lt;用户名&gt;/&lt;仓名&gt;.git</span><br></pre></td></tr></tbody></table></figure></li><li><p>git commit –amend 使用nano编辑器，非常不方便</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global core.editor vim</span><br></pre></td></tr></tbody></table></figure></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Neovim: 安装与配置</title>
       <link href="/2023/06/04/Neovim-%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
       <url>/2023/06/04/Neovim-%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
