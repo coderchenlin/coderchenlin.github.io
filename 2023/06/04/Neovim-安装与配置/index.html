@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Neovim: 安装与配置 | Lin&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="安装和配置Neovim（nvim）包括两个主要步骤：安装Neovim本身和进行基本配置。以下是安装和配置Neovim的一般步骤：  安装Neovim：  在Linux上，您可以使用包管理器（如apt、dnf、pacman等）进行安装。例如，在Ubuntu上，可以运行以下命令：1sudo apt-get install neovim 在macOS上，您可以使用Homebrew进行安装。运行以下命令：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Neovim: 安装与配置">
+<meta property="og:url" content="https://coderchenlin.github.io/2023/06/04/Neovim-%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/index.html">
+<meta property="og:site_name" content="Lin&#39;s Blog">
+<meta property="og:description" content="安装和配置Neovim（nvim）包括两个主要步骤：安装Neovim本身和进行基本配置。以下是安装和配置Neovim的一般步骤：  安装Neovim：  在Linux上，您可以使用包管理器（如apt、dnf、pacman等）进行安装。例如，在Ubuntu上，可以运行以下命令：1sudo apt-get install neovim 在macOS上，您可以使用Homebrew进行安装。运行以下命令：">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-06-04T13:24:23.000Z">
+<meta property="article:modified_time" content="2023-06-04T13:26:11.427Z">
+<meta property="article:author" content="Lin Chen">
+<meta property="article:tag" content="Neovim">
+<meta property="article:tag" content="vim">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Lin's Blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Lin&#39;s Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://coderchenlin.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Neovim-安装与配置" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/06/04/Neovim-%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/" class="article-date">
+  <time class="dt-published" datetime="2023-06-04T13:24:23.000Z" itemprop="datePublished">2023-06-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Neovim: 安装与配置
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>安装和配置Neovim（nvim）包括两个主要步骤：安装Neovim本身和进行基本配置。以下是安装和配置Neovim的一般步骤：</p>
+<ol>
+<li><p>安装Neovim：</p>
+<ul>
+<li>在Linux上，您可以使用包管理器（如apt、dnf、pacman等）进行安装。例如，在Ubuntu上，可以运行以下命令：<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install neovim</span><br></pre></td></tr></tbody></table></figure></li>
+<li>在macOS上，您可以使用Homebrew进行安装。运行以下命令：<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install neovim</span><br></pre></td></tr></tbody></table></figure></li>
+<li>在Windows上，您可以从Neovim的官方网站（<a target="_blank" rel="noopener" href="https://neovim.io/%EF%BC%89%E4%B8%8B%E8%BD%BD%E9%A2%84%E7%BC%96%E8%AF%91%E7%9A%84%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F%E5%B9%B6%E8%BF%9B%E8%A1%8C%E5%AE%89%E8%A3%85%E3%80%82">https://neovim.io/）下载预编译的安装程序并进行安装。</a></li>
+</ul>
+</li>
+<li><p>基本配置：</p>
+<ul>
+<li>打开终端或命令提示符，并运行以下命令创建配置文件：<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p ~/.config/nvim</span><br><span class="line">touch ~/.config/nvim/init.vim</span><br></pre></td></tr></tbody></table></figure></li>
+<li>使用您喜欢的文本编辑器（如Vim、Neovim自带的nvim）打开<code>~/.config/nvim/init.vim</code>文件，并添加您的配置设置。以下是一个基本配置示例：<figure class="highlight vim"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">" 启用行号显示</span></span><br><span class="line"><span class="keyword">set</span> <span class="keyword">number</span></span><br><span class="line"></span><br><span class="line"><span class="comment">" 启用语法高亮</span></span><br><span class="line"><span class="keyword">syntax</span> enable</span><br><span class="line"></span><br><span class="line"><span class="comment">" 设置tab宽度为4个空格</span></span><br><span class="line"><span class="keyword">set</span> tabstop=<span class="number">4</span></span><br><span class="line"><span class="keyword">set</span> <span class="built_in">shiftwidth</span>=<span class="number">4</span></span><br><span class="line"><span class="keyword">set</span> expandtab</span><br></pre></td></tr></tbody></table></figure></li>
+<li>保存并关闭文件。</li>
+</ul>
+</li>
+<li><p>启动Neovim：</p>
+<ul>
+<li>在终端或命令提示符中运行以下命令启动Neovim：<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvim</span><br></pre></td></tr></tbody></table></figure></li>
+<li>Neovim将读取配置文件，并根据您的设置进行初始化。</li>
+</ul>
+</li>
+<li><p>进一步配置：</p>
+<ul>
+<li>您可以根据个人需求进一步定制和配置Neovim。例如，您可以选择安装插件管理器（如vim-plug、dein.vim）来管理插件，配置自动补全、主题、快捷键映射等。</li>
+</ul>
+</li>
+</ol>
+<p>请记住，Neovim具有丰富的配置选项和功能，您可以根据自己的需求进行定制和扩展。官方文档（<a target="_blank" rel="noopener" href="https://neovim.io/doc/user/%EF%BC%89%E6%98%AF%E4%BA%86%E8%A7%A3%E6%9B%B4%E5%A4%9ANeovim%E5%8A%9F%E8%83%BD%E5%92%8C%E9%85%8D%E7%BD%AE%E7%9A%84%E7%BB%9D%E4%BD%B3%E8%B5%84%E6%BA%90%E3%80%82">https://neovim.io/doc/user/）是了解更多Neovim功能和配置的绝佳资源。</a></p>
+<p>下面是一个简单的示例，展示了Neovim的基本配置：</p>
+<figure class="highlight vim"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">" 设置行号显示</span></span><br><span class="line"><span class="keyword">set</span> <span class="keyword">number</span></span><br><span class="line"></span><br><span class="line"><span class="comment">" 启用语法高亮</span></span><br><span class="line"><span class="keyword">syntax</span> enable</span><br><span class="line"></span><br><span class="line"><span class="comment">" 设置配色方案</span></span><br><span class="line"><span class="keyword">colorscheme</span> gruvbox</span><br><span class="line"></span><br><span class="line"><span class="comment">" 设置自动缩进</span></span><br><span class="line"><span class="keyword">set</span> autoindent</span><br><span class="line"></span><br><span class="line"><span class="comment">" 启用文件类型检测</span></span><br><span class="line"><span class="keyword">filetype</span> plugin <span class="built_in">indent</span> <span class="keyword">on</span></span><br><span class="line"></span><br><span class="line"><span class="comment">" 设置tab宽度为4个空格</span></span><br><span class="line"><span class="keyword">set</span> tabstop=<span class="number">4</span></span><br><span class="line"><span class="keyword">set</span> <span class="built_in">shiftwidth</span>=<span class="number">4</span></span><br><span class="line"><span class="keyword">set</span> expandtab</span><br><span class="line"></span><br><span class="line"><span class="comment">" 启用鼠标支持</span></span><br><span class="line"><span class="keyword">set</span> mouse=<span class="keyword">a</span></span><br><span class="line"></span><br><span class="line"><span class="comment">" 设置搜索时忽略大小写</span></span><br><span class="line"><span class="keyword">set</span> ignorecase</span><br><span class="line"></span><br><span class="line"><span class="comment">" 启用增量搜索</span></span><br><span class="line"><span class="keyword">set</span> incsearch</span><br><span class="line"></span><br><span class="line"><span class="comment">" 设置快捷键映射</span></span><br><span class="line"><span class="keyword">nnoremap</span> <span class="symbol">&lt;leader&gt;</span><span class="keyword">w</span> :<span class="keyword">w</span><span class="symbol">&lt;CR&gt;</span></span><br><span class="line"><span class="keyword">nnoremap</span> <span class="symbol">&lt;leader&gt;</span>q :q<span class="symbol">&lt;CR&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">" 自动关闭括号匹配</span></span><br><span class="line"><span class="keyword">autocmd</span> FileType <span class="keyword">ruby</span>,<span class="keyword">python</span>,<span class="keyword">perl</span>,php,javascript,<span class="keyword">vim</span>,jinja,html,xml,yaml,yml <span class="keyword">autocmd</span> BufEnter * silent! %s/\s\+$//<span class="keyword">e</span> | <span class="keyword">syntax</span> <span class="keyword">sync</span> fromstart</span><br><span class="line"></span><br><span class="line"><span class="comment">" 启用插件管理器</span></span><br><span class="line"><span class="comment">" 以下是使用vim-plug插件管理器的示例配置</span></span><br><span class="line"><span class="keyword">call</span> plug#begin(<span class="string">'~/.vim/plugged'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">" 插件列表</span></span><br><span class="line"><span class="comment">" 插件1: NERDTree 文件资源管理器</span></span><br><span class="line">Plug <span class="string">'preservim/nerdtree'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">" 插件2: coc.nvim 自动补全和语言服务器支持</span></span><br><span class="line">Plug <span class="string">'neoclide/coc.nvim'</span>, {<span class="string">'branch'</span>: <span class="string">'release'</span>}</span><br><span class="line"></span><br><span class="line"><span class="comment">" 插件3: vim-commentary 注释插件</span></span><br><span class="line">Plug <span class="string">'tpope/vim-commentary'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">" 结束插件列表</span></span><br><span class="line"><span class="keyword">call</span> plug#end()</span><br></pre></td></tr></tbody></table></figure>
+
+<p>以上示例展示了一些常用的配置选项和插件，包括行号显示、语法高亮、配色方案、自动缩进、文件类型检测、快捷键映射等。同时，示例中使用了vim-plug插件管理器来管理插件的安装和加载。</p>
+<p>请注意，这只是一个基本的示例配置，您可以根据自己的需求进行修改和扩展。同时，根据您使用的插件管理器和具体插件的要求，可能需要进行额外的设置和依赖项安装。</p>
+<p>您可以将以上配置保存为<code>~/.config/nvim/init.vim</code>文件（如果该文件夹和文件不存在，则需要手动创建），Neovim将在启动时加载该配置文件，并应用相应的设置和插件。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://coderchenlin.github.io/2023/06/04/Neovim-%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/" data-id="clihgi8f70000z0ehbwx09ydg" data-title="Neovim: 安装与配置" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Neovim/" rel="tag">Neovim</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2023/06/04/github-workflow/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">github: workflow</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/LLVM/" rel="tag">LLVM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Neovim/" rel="tag">Neovim</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/c-c/" rel="tag">c&#x2F;c++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/" rel="tag">github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/interview/" rel="tag">interview</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shell/" rel="tag">shell</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/LLVM/" style="font-size: 10px;">LLVM</a> <a href="/tags/Neovim/" style="font-size: 10px;">Neovim</a> <a href="/tags/c-c/" style="font-size: 20px;">c/c++</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/github/" style="font-size: 20px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/interview/" style="font-size: 20px;">interview</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/shell/" style="font-size: 10px;">shell</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/05/">May 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/06/04/Neovim-%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/">Neovim: 安装与配置</a>
+          </li>
+        
+          <li>
+            <a href="/2023/06/04/github-workflow/">github: workflow</a>
+          </li>
+        
+          <li>
+            <a href="/2023/06/04/git-pre-commit/">git pre-commit</a>
+          </li>
+        
+          <li>
+            <a href="/2023/06/04/hexo%E5%A4%87%E4%BB%BD%E8%BF%81%E7%A7%BB/">hexo备份迁移</a>
+          </li>
+        
+          <li>
+            <a href="/2023/06/04/zsh/">ubuntu安装zsh</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 Lin Chen<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

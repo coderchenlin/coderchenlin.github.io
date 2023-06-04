@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://coderchenlin.github.io/2023/06/04/Neovim-%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</loc>
+    
+    <lastmod>2023-06-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://coderchenlin.github.io/2023/06/04/github-workflow/</loc>
     
     <lastmod>2023-06-04</lastmod>
@@ -142,6 +151,20 @@
   
   <url>
     <loc>https://coderchenlin.github.io/tags/git/</loc>
+    <lastmod>2023-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://coderchenlin.github.io/tags/Neovim/</loc>
+    <lastmod>2023-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://coderchenlin.github.io/tags/vim/</loc>
     <lastmod>2023-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
