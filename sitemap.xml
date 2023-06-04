@@ -102,7 +102,21 @@
   </url>
   
   <url>
-    <loc>https://coderchenlin.github.io/tags/linux-hexo-github/</loc>
+    <loc>https://coderchenlin.github.io/tags/linux/</loc>
+    <lastmod>2023-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://coderchenlin.github.io/tags/hexo/</loc>
+    <lastmod>2023-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://coderchenlin.github.io/tags/github/</loc>
     <lastmod>2023-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
