@@ -73,6 +73,60 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-git-clang-format" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/06/18/git-clang-format/" class="article-date">
+  <time class="dt-published" datetime="2023-06-18T14:56:00.000Z" itemprop="datePublished">2023-06-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/06/18/git-clang-format/">git clang-format</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="1-why-use-clang-format"><a href="#1-why-use-clang-format" class="headerlink" title="1. why use clang-format?"></a>1. why use clang-format?</h3><ol>
+<li>important to raise the code quality</li>
+<li>formatting your code is important is that you get a uniformed code when reading it, meaning you will decrease the “WTF per minute”-score*.</li>
+</ol>
+<h3 id="install"><a href="#install" class="headerlink" title="install"></a>install</h3><ol>
+<li><p>clang-format</p>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install clang-format</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>config .clang-format</p>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd &lt;path to repo&gt;    </span><br><span class="line">clang-format -style=llvm -dump-config &gt; .clang-format</span><br></pre></td></tr></tbody></table></figure>
+<p> also you can choose another style or custom your style by changing <em>.clang-format</em>.</p>
+</li>
+</ol>
+<h3 id="how-to-use"><a href="#how-to-use" class="headerlink" title="how to use"></a>how to use</h3><p>after editing the code. do it as follows:<br>    </p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add -u</span><br><span class="line">git clang-format</span><br></pre></td></tr></tbody></table></figure><br>The clang-format will format the staged code, you can use <font color="red"> git diff </font> to check whether the clang-format is work.<p></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://coderchenlin.github.io/2023/06/18/git-clang-format/" data-id="clj1k9ty90000ioeha45ch4y6" data-title="git clang-format" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/clang-format/" rel="tag">clang-format</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-linux安装Anaconda以及基本用法" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/06/04/linux%E5%AE%89%E8%A3%85Anaconda%E4%BB%A5%E5%8F%8A%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" class="article-date">
@@ -198,7 +252,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://coderchenlin.github.io/2023/06/04/linux%E5%AE%89%E8%A3%85Anaconda%E4%BB%A5%E5%8F%8A%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" data-id="clihhi37e00001xeh4kkz8chr" data-title="linux安装Anaconda以及基本用法" class="article-share-link">Share</a>
+      <a data-url="https://coderchenlin.github.io/2023/06/04/linux%E5%AE%89%E8%A3%85Anaconda%E4%BB%A5%E5%8F%8A%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" data-id="clihjchhn0011vkeh8u367jge" data-title="linux安装Anaconda以及基本用法" class="article-share-link">Share</a>
       
       
       
@@ -248,7 +302,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://coderchenlin.github.io/2023/06/04/github-%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/" data-id="clihh3n0x0000nleh5r056es4" data-title="github: 问题收集" class="article-share-link">Share</a>
+      <a data-url="https://coderchenlin.github.io/2023/06/04/github-%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/" data-id="clihjchh80009vkehds5r50uv" data-title="github: 问题收集" class="article-share-link">Share</a>
       
       
       
@@ -323,7 +377,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://coderchenlin.github.io/2023/06/04/Neovim-%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/" data-id="clihgi8f70000z0ehbwx09ydg" data-title="Neovim: 安装与配置" class="article-share-link">Share</a>
+      <a data-url="https://coderchenlin.github.io/2023/06/04/Neovim-%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/" data-id="clihjchh60005vkeh4y5y45mt" data-title="Neovim: 安装与配置" class="article-share-link">Share</a>
       
       
       
@@ -387,7 +441,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://coderchenlin.github.io/2023/06/04/github-workflow/" data-id="clihg2n0v0000cneh0r160vd2" data-title="github: workflow" class="article-share-link">Share</a>
+      <a data-url="https://coderchenlin.github.io/2023/06/04/github-workflow/" data-id="clihjchh70006vkeh5vi3cv03" data-title="github: workflow" class="article-share-link">Share</a>
       
       
       
@@ -459,7 +513,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://coderchenlin.github.io/2023/06/04/git-pre-commit/" data-id="clihf7ez40000ihehdqo3hc97" data-title="git pre-commit" class="article-share-link">Share</a>
+      <a data-url="https://coderchenlin.github.io/2023/06/04/git-pre-commit/" data-id="clihjchh50004vkeh2d8u73bd" data-title="git pre-commit" class="article-share-link">Share</a>
       
       
       
@@ -519,12 +573,63 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://coderchenlin.github.io/2023/06/04/hexo%E5%A4%87%E4%BB%BD%E8%BF%81%E7%A7%BB/" data-id="clih72lef0000i5eh2escaopt" data-title="hexo备份迁移" class="article-share-link">Share</a>
+      <a data-url="https://coderchenlin.github.io/2023/06/04/hexo%E5%A4%87%E4%BB%BD%E8%BF%81%E7%A7%BB/" data-id="clihjchhc000cvkeh4f7293wd" data-title="hexo备份迁移" class="article-share-link">Share</a>
       
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/" rel="tag">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/" rel="tag">linux</a></li></ul>
 
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/06/04/hello-world/" class="article-date">
+  <time class="dt-published" datetime="2023-06-04T07:40:26.670Z" itemprop="datePublished">2023-06-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/06/04/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://coderchenlin.github.io/2023/06/04/hello-world/" data-id="clihjchh9000avkeh6rcg0ou6" data-title="Hello World" class="article-share-link">Share</a>
+      
+      
+      
     </footer>
   </div>
   
@@ -577,7 +682,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://coderchenlin.github.io/2023/06/04/zsh/" data-id="clih3cauv0000c7eh4eql125a" data-title="ubuntu安装zsh" class="article-share-link">Share</a>
+      <a data-url="https://coderchenlin.github.io/2023/06/04/zsh/" data-id="clihjchhf000fvkehcsxg9x4t" data-title="ubuntu安装zsh" class="article-share-link">Share</a>
       
       
       
@@ -615,107 +720,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://coderchenlin.github.io/2023/05/30/AutoBuild/" data-id="clia98xym0000boffdrizgpay" data-title="AutoBuild" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Linux文本操作" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/11/16/Linux%E6%96%87%E6%9C%AC%E6%93%8D%E4%BD%9C/" class="article-date">
-  <time class="dt-published" datetime="2022-11-16T14:09:50.000Z" itemprop="datePublished">2022-11-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/11/16/Linux%E6%96%87%E6%9C%AC%E6%93%8D%E4%BD%9C/">linux文本操作</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <ol>
-<li><p>把src.txt 的文本追加到dst.txt 后面</p>
-<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat src.txt &gt;&gt; dst.txt</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>linux 单线程所能支持的最大文件处理数量</p>
-<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /proc/sys/fs/file-max</span><br></pre></td></tr></tbody></table></figure>
-
-<p>设置:例如设置成8192</p>
-<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo 8192 &gt; /proc/sys/fs/file-max</span><br></pre></td></tr></tbody></table></figure></li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://coderchenlin.github.io/2022/11/16/Linux%E6%96%87%E6%9C%AC%E6%93%8D%E4%BD%9C/" data-id="clajr996e0001ndffdeeue8b4" data-title="linux文本操作" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shell/" rel="tag">shell</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/11/15/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-11-15T15:32:00.327Z" itemprop="datePublished">2022-11-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/11/15/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://coderchenlin.github.io/2022/11/15/hello-world/" data-id="clajr996k0003ndff4rzodnru" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="https://coderchenlin.github.io/2023/05/30/AutoBuild/" data-id="clihjchgt0000vkehb5wagoi1" data-title="AutoBuild" class="article-share-link">Share</a>
       
       
       
@@ -745,7 +750,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Anaconda/" rel="tag">Anaconda</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LLVM/" rel="tag">LLVM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Neovim/" rel="tag">Neovim</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/c-c/" rel="tag">c&#x2F;c++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/" rel="tag">github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/interview/" rel="tag">interview</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shell/" rel="tag">shell</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Anaconda/" rel="tag">Anaconda</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LLVM/" rel="tag">LLVM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Neovim/" rel="tag">Neovim</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/c-c/" rel="tag">c&#x2F;c++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/clang-format/" rel="tag">clang-format</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/" rel="tag">github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/interview/" rel="tag">interview</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shell/" rel="tag">shell</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
     </div>
   </div>
 
@@ -755,7 +760,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Anaconda/" style="font-size: 10px;">Anaconda</a> <a href="/tags/LLVM/" style="font-size: 10px;">LLVM</a> <a href="/tags/Neovim/" style="font-size: 10px;">Neovim</a> <a href="/tags/c-c/" style="font-size: 20px;">c/c++</a> <a href="/tags/git/" style="font-size: 20px;">git</a> <a href="/tags/github/" style="font-size: 20px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/interview/" style="font-size: 20px;">interview</a> <a href="/tags/linux/" style="font-size: 20px;">linux</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/shell/" style="font-size: 10px;">shell</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
+      <a href="/tags/Anaconda/" style="font-size: 10px;">Anaconda</a> <a href="/tags/LLVM/" style="font-size: 10px;">LLVM</a> <a href="/tags/Neovim/" style="font-size: 10px;">Neovim</a> <a href="/tags/c-c/" style="font-size: 15px;">c/c++</a> <a href="/tags/clang-format/" style="font-size: 10px;">clang-format</a> <a href="/tags/git/" style="font-size: 20px;">git</a> <a href="/tags/github/" style="font-size: 15px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/interview/" style="font-size: 15px;">interview</a> <a href="/tags/linux/" style="font-size: 15px;">linux</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/shell/" style="font-size: 10px;">shell</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
     </div>
   </div>
 
@@ -777,6 +782,10 @@
       <ul>
         
           <li>
+            <a href="/2023/06/18/git-clang-format/">git clang-format</a>
+          </li>
+        
+          <li>
             <a href="/2023/06/04/linux%E5%AE%89%E8%A3%85Anaconda%E4%BB%A5%E5%8F%8A%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/">linux安装Anaconda以及基本用法</a>
           </li>
         
@@ -790,10 +799,6 @@
         
           <li>
             <a href="/2023/06/04/github-workflow/">github: workflow</a>
-          </li>
-        
-          <li>
-            <a href="/2023/06/04/git-pre-commit/">git pre-commit</a>
           </li>
         
       </ul>
