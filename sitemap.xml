@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://coderchenlin.github.io/2023/06/18/git-clang-format/</loc>
+    
+    <lastmod>2023-06-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://coderchenlin.github.io/2023/06/04/github-%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/</loc>
     
     <lastmod>2023-06-04</lastmod>
@@ -112,7 +121,7 @@
 
   <url>
     <loc>https://coderchenlin.github.io/</loc>
-    <lastmod>2023-06-04</lastmod>
+    <lastmod>2023-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -120,84 +129,91 @@
   
   <url>
     <loc>https://coderchenlin.github.io/tags/shell/</loc>
-    <lastmod>2023-06-04</lastmod>
+    <lastmod>2023-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://coderchenlin.github.io/tags/interview/</loc>
-    <lastmod>2023-06-04</lastmod>
+    <lastmod>2023-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://coderchenlin.github.io/tags/c-c/</loc>
-    <lastmod>2023-06-04</lastmod>
+    <lastmod>2023-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://coderchenlin.github.io/tags/git/</loc>
-    <lastmod>2023-06-04</lastmod>
+    <lastmod>2023-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://coderchenlin.github.io/tags/Neovim/</loc>
-    <lastmod>2023-06-04</lastmod>
+    <lastmod>2023-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://coderchenlin.github.io/tags/vim/</loc>
-    <lastmod>2023-06-04</lastmod>
+    <lastmod>2023-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://coderchenlin.github.io/tags/github/</loc>
-    <lastmod>2023-06-04</lastmod>
+    <lastmod>2023-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://coderchenlin.github.io/tags/linux/</loc>
-    <lastmod>2023-06-04</lastmod>
+    <lastmod>2023-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://coderchenlin.github.io/tags/hexo/</loc>
-    <lastmod>2023-06-04</lastmod>
+    <lastmod>2023-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://coderchenlin.github.io/tags/LLVM/</loc>
-    <lastmod>2023-06-04</lastmod>
+    <lastmod>2023-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://coderchenlin.github.io/tags/Anaconda/</loc>
-    <lastmod>2023-06-04</lastmod>
+    <lastmod>2023-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://coderchenlin.github.io/tags/python/</loc>
-    <lastmod>2023-06-04</lastmod>
+    <lastmod>2023-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://coderchenlin.github.io/tags/clang-format/</loc>
+    <lastmod>2023-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

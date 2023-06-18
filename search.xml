@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>git clang-format</title>
+      <link href="/2023/06/18/git-clang-format/"/>
+      <url>/2023/06/18/git-clang-format/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-why-use-clang-format"><a href="#1-why-use-clang-format" class="headerlink" title="1. why use clang-format?"></a>1. why use clang-format?</h3><ol><li>important to raise the code quality</li><li>formatting your code is important is that you get a uniformed code when reading it, meaning you will decrease the “WTF per minute”-score*.</li></ol><h3 id="install"><a href="#install" class="headerlink" title="install"></a>install</h3><ol><li><p>clang-format</p> <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install clang-format</span><br></pre></td></tr></tbody></table></figure></li><li><p>config .clang-format</p> <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd &lt;path to repo&gt;    </span><br><span class="line">clang-format -style=llvm -dump-config &gt; .clang-format</span><br></pre></td></tr></tbody></table></figure><p> also you can choose another style or custom your format by changing <em>.clang-format</em>.</p></li></ol><h3 id="how-to-use"><a href="#how-to-use" class="headerlink" title="how to use"></a>how to use</h3><pre><code>after editing the code. do it as follows:<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add -u</span><br><span class="line">git clang-format</span><br></pre></td></tr></tbody></table></figure>the clang-format will format the staged code.</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+            <tag> clang-format </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>linux安装Anaconda以及基本用法</title>
       <link href="/2023/06/04/linux%E5%AE%89%E8%A3%85Anaconda%E4%BB%A5%E5%8F%8A%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/"/>
       <url>/2023/06/04/linux%E5%AE%89%E8%A3%85Anaconda%E4%BB%A5%E5%8F%8A%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</url>
