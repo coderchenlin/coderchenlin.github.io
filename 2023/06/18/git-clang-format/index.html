@@ -14,7 +14,7 @@
 <meta property="og:description" content="1. why use clang-format? important to raise the code quality formatting your code is important is that you get a uniformed code when reading it, meaning you will decrease the “WTF per minute”-score*.">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-06-18T14:56:00.000Z">
-<meta property="article:modified_time" content="2023-06-18T15:07:01.701Z">
+<meta property="article:modified_time" content="2023-06-18T15:13:29.344Z">
 <meta property="article:author" content="Lin Chen">
 <meta property="article:tag" content="git">
 <meta property="article:tag" content="clang-format">
@@ -109,13 +109,10 @@
 </li>
 <li><p>config .clang-format</p>
  <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd &lt;path to repo&gt;    </span><br><span class="line">clang-format -style=llvm -dump-config &gt; .clang-format</span><br></pre></td></tr></tbody></table></figure>
-<p> also you can choose another style or custom your format by changing <em>.clang-format</em>.</p>
+<p> also you can choose another style or custom your style by changing <em>.clang-format</em>.</p>
 </li>
 </ol>
-<h3 id="how-to-use"><a href="#how-to-use" class="headerlink" title="how to use"></a>how to use</h3><pre><code>after editing the code. do it as follows:
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add -u</span><br><span class="line">git clang-format</span><br></pre></td></tr></tbody></table></figure>
-the clang-format will format the staged code.
-</code></pre>
+<h3 id="how-to-use"><a href="#how-to-use" class="headerlink" title="how to use"></a>how to use</h3><p>after editing the code. do it as follows:<br>    </p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add -u</span><br><span class="line">git clang-format</span><br></pre></td></tr></tbody></table></figure><br>The clang-format will format the staged code, you can use <font color="red"> git diff </font> to check whether the clang-format is work.<p></p>
 
       
     </div>
